@@ -1,5 +1,6 @@
 import string
 import random
+import os
 
 print("Welcome to the PyPassword Generator!")
 
@@ -10,7 +11,10 @@ while True:
         break
 
     except ValueError:
+        # clear the screen before print out error
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("Please enter a number")
+        
 
 # create a string of upper, lower, digits, and symbols to sample from
 characters = string.ascii_letters + string.digits + string.punctuation
