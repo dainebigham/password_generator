@@ -13,7 +13,7 @@ while True:
     except ValueError:
         # clear the screen before print out error
         os.system('cls' if os.name == 'nt' else 'clear')
-        print("Please enter a number")
+        print("Welcome to the PyPassword Generator!\n(Please enter a number)")
         
 
 # create a string of upper, lower, digits, and symbols to sample from
